@@ -2,7 +2,6 @@
 
 This repository contains the complete, reproducible analysis pipeline for identifying transitional dynamics in iPSC-derived cardiomyocytes. The analysis first uses **SEACells** to aggregate the dataset into metacells and then applies **MuTrans** to model cellular dynamics and identify attractor states.
 
-This work is structured for submission to a top-tier journal, prioritizing clarity, reproducibility, and high-quality figures.
 
 ---
 
