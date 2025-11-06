@@ -44,7 +44,7 @@ def initialize_data(filepath):
     ad = sc.read(filepath)
     print(f'Original data shape: {ad.shape}')
     
-    # Use 'data' layer as per your original script
+    # Use 'data' layer 
     ad.X = ad.layers['data']
     ad.X = ad.X.astype(np.float32)
     sc.pp.pca(ad, n_comps=30)
@@ -100,7 +100,7 @@ def summarize_and_evaluate(ad, model):
     """Generates QC plots for the SEACells model."""
     print("Evaluating model and plotting QC...")
     
-    # (Your plotting code, now saving to FIG_DIR)
+    # (saving to FIG_DIR)
     SEACells.plot.plot_2D(ad, key='X_umap', colour_metacells=False, save_as=str(FIG_DIR / "umap_cells.png"))
     SEACells.plot.plot_2D(ad, key='X_umap', colour_metacells=True, save_as=str(FIG_DIR / "umap_metacells.png"))
     SEACells.plot.plot_SEACell_sizes(ad, bins=5, save_as=str(FIG_DIR / "seacell_sizes.png"))
@@ -135,7 +135,7 @@ def main():
     
     # 3. Run SEACells
     n_cells = ad.shape[0]
-    n_SEACells = n_cells // 200 # As in your original script
+    n_SEACells = n_cells // 200 
     model = run_seacells(ad, n_SEACells)
 
     # 4. Save results to data/processed/seacells/
