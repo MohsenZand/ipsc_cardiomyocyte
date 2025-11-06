@@ -50,7 +50,7 @@ ipsc_cardiomyocyte_dynamics/
 
 **1. Clone the Repository:**
 ```bash
-git clone [https://github.com/your_username/ipsc_cardiomyocyte_dynamics.git](https://github.com/your_username/ipsc_cardiomyocyte_dynamics.git)
+git clone [https://github.com/MohsenZand/ipsc_cardiomyocyte.git](https://github.com/MohsenZand/ipsc_cardiomyocyte.git)
 cd ipsc_cardiomyocyte_dynamics
 ```
 
