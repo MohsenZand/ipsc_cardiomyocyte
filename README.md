@@ -50,8 +50,8 @@ ipsc_cardiomyocyte_dynamics/
 
 **1. Clone the Repository:**
 ```bash
-git clone [https://github.com/MohsenZand/ipsc_cardiomyocyte.git](https://github.com/MohsenZand/ipsc_cardiomyocyte.git)
-cd ipsc_cardiomyocyte_dynamics
+git clone https://github.com/MohsenZand/ipsc_cardiomyocyte.git
+cd ipsc_cardiomyocyte
 ```
 
 **2. Create Conda Environment:**
@@ -61,13 +61,7 @@ conda activate ipsc_mutrans_seacells
 ```
 
 **3. Install `pyMuTrans` (Manual Step):**
-The `MuTrans` package is required. Since it is not on PyPI, it must be installed from its local path.
 
-* **Edit `src/plotting.py`:** Update the `sys.path.append` line to point to the correct location of `MuTrans` on your system.
-* **Install (if applicable):** If `MuTrans` has a `setup.py`, run:
-    ```bash
-    pip install /project/xyang2/mohsen/experiments/MuTrans/
-    ```
 
 **4. Download Data:**
 Place the raw data file `GSE175634_iPSC_CM.sct3k_reclustered.h5ad` into the `data/raw/` directory.
@@ -105,8 +99,4 @@ python scripts/03_generate_all_figures.py
 
 ### Option B: Interactive Exploration (Notebooks)
 
-Open Jupyter Lab and run the notebooks in the `notebooks/` directory in numerical order.
 
-```bash
-jupyter lab
-```
