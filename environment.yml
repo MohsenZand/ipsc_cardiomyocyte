@@ -1,0 +1,28 @@
+name: ipsc_mutrans_seacells
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # Core scientific stack
+  - python=3.8
+  - pip
+  - jupyter
+  - numpy
+  - pandas
+  - scipy
+  
+  # Scanpy and single-cell ecosystem
+  - scanpy
+  - python-leiden
+  -- scikit-learn
+  
+  # Plotting
+  - matplotlib
+  - seaborn
+  - pillow
+  
+  # Note: pyMuTrans is not in a public repository
+  # It must be installed manually. See README.md
+  # - pip:
+  #   - /path/to/your/MuTrans/package

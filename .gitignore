@@ -1,0 +1,16 @@
+# Data and Results
+data/
+results/
+
+# Python cache and environment files
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# VS Code and OS files
+.vscode/
+.DS_Store
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
